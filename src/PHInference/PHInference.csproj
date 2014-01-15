@@ -32,13 +32,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Infer.Compiler, Version=2.5.30419.0, Culture=neutral, PublicKeyToken=e4813102a62778da, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>lib\Infer.Compiler.dll</HintPath>
+    <Reference Include="Infer.Compiler">
+      <HintPath>..\..\lib\Infer.Compiler.dll</HintPath>
     </Reference>
-    <Reference Include="Infer.Runtime, Version=2.5.30419.0, Culture=neutral, PublicKeyToken=e4813102a62778da, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>lib\Infer.Runtime.dll</HintPath>
+    <Reference Include="Infer.Runtime">
+      <HintPath>..\..\lib\Infer.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -49,8 +47,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="src\PHModel.cs" />
-    <Compile Include="src\Program.cs" />
+    <Compile Include="PHModel.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -66,6 +64,9 @@
     <Content Include="lib\Infer.Runtime.dll" />
     <Content Include="lib\Infer.Runtime.pdb" />
     <Content Include="lib\Infer.Runtime.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
